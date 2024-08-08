@@ -18,8 +18,7 @@ import {
 
 const about = {
   title: "About me",
-  description:
-    "I'm Syerik, nice to meet you! HAhahahahhd ashd ashd ahsd has hdash dahs has h",
+  description: "I'm Syerik",
   info: [
     { fieldName: "Name", fieldValue: "Syerik Khuanysh" },
     { fieldName: "Phone", fieldValue: "+97694241021" },

@@ -15,9 +15,11 @@ const Header = () => {
         </Link>
         <div className="md:flex hidden items-center gap-8">
           <Nav />
-          <Button className="bg-accent rounded-2xl hover:bg-accent-hover text-primary">
-            Hire me
-          </Button>
+          <Link href="/contact">
+            <Button className="bg-accent rounded-2xl hover:bg-accent-hover text-primary">
+              Hire me
+            </Button>
+          </Link>
         </div>
         <div className="md:hidden">
           <MobileNav />

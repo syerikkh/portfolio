@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
@@ -13,6 +13,7 @@ import {
 } from "../../components/ui/tooltip";
 import Link from "next/link";
 import Image from "next/image";
+import WorkSliderButtons from "../../components/WorkSliderButtons";
 
 const projects = [
   {
@@ -56,7 +57,10 @@ const WorkPage = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
@@ -82,7 +86,7 @@ const WorkPage = () => {
               </ul>
               <div className="border border-white/20 "></div>
               <div className="flex items-center gap-4">
-                <Link href={project.github}>
+                <Link href={project.live}>
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -94,14 +98,14 @@ const WorkPage = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                <Link href={project.live}>
+                <Link href={project.github}>
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
                         <BsGithub className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Live project</p>
+                        <p>Github project</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
@@ -133,6 +137,11 @@ const WorkPage = () => {
                   </SwiperSlide>
                 );
               })}
+              <WorkSliderButtons
+                iconsStyles="w-full"
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                containerStyles="flex gap-2 absolute right-0 w-full justify-between lg:bottom-0 z-20 lg:w-max lg:justify-none"
+              />
             </Swiper>
           </div>
         </div>

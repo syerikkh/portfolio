@@ -55,7 +55,7 @@ const ContactPage = () => {
           <ul className="grid grid-cols-2 gap-10">
             {info.map((item, index) => {
               return (
-                <li key={index} className="flex gap-6">
+                <li key={index} className="flex lg:flex-row flex-col gap-6">
                   <div className="w-[52px] h-[52px] lg:w-[72px] lg:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
                     {item.link ? (
                       <Link href={item.link}>
@@ -67,7 +67,7 @@ const ContactPage = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-white/60">{item.title}</p>
-                    <h3 className="text-xl">{item.description}</h3>
+                    <h3 className="lg:text-xl text-md">{item.description}</h3>
                   </div>
                 </li>
               );

@@ -29,7 +29,10 @@ const ResumePage = () => {
       className="min-h-[80vh] flex items-center justify-center py-12"
     >
       <div className="container mx-auto">
-        <Tabs defaultValue="experience" className="flex gap-[60px]">
+        <Tabs
+          defaultValue="experience"
+          className="flex lg:flex-row flex-col gap-[60px]"
+        >
           <TabsList className="flex flex-col gap-4 w-full max-w-[380px]">
             <div className="max-w-[380px] flex flex-col gap-3 mb-3">
               <h1 className="text-5xl text-white">Why hire me?</h1>

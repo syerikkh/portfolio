@@ -30,7 +30,7 @@ const about = {
 
 const experience = {
   title: "My experience",
-  description: "Here's a summary of my professional experience.",
+  description: "Here's a summary of my experience.",
   items: [
     {
       company: "Franklyn Discovery School",
@@ -75,7 +75,9 @@ const skills = {
 
 export const AboutMe = () => (
   <div className="flex flex-col gap-[30px]">
-    <h3 className="text-4xl font-bold">{about.title}</h3>
+    <h3 className="text-4xl text-center lg:text-left font-bold">
+      {about.title}
+    </h3>
     <p className="max-w-[600px] text-white/60 mx-auto md:mx-0">
       {about.description}
     </p>

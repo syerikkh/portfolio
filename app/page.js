@@ -16,8 +16,9 @@ const Home = () => {
               <span className="text-accent">Syerik Khuanysh</span>
             </h1>
             <p className="text-white/80 mb-6 max-w-[500px]">
-              asjldlasnda d adasd asd asdk ljasd as dasd as as asd asasdas
-              asdasd asd asd asdasd asda as{" "}
+              I’m a 22-year-old software developer passionate about building
+              websites. I’m eager to collaborate with companies to bring
+              innovative ideas to life.{" "}
             </p>
             <div className="flex flex-col md:flex-row items-center gap-8">
               <Button className="border border-accent text-accent hover:bg-accent-hover hover:text-primary rounded-xl">

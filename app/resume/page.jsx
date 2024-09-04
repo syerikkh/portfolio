@@ -38,7 +38,7 @@ const ResumePage = () => {
               <h1 className="text-5xl text-white">Why hire me?</h1>
               <p className="text-md text-white/60">
                 I'm dedicated, efficient, and ready to contribute to your team's
-                success
+                success test
               </p>
             </div>
             <TabsTrigger value="experience">Experience</TabsTrigger>

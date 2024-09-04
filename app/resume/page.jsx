@@ -36,7 +36,10 @@ const ResumePage = () => {
           <TabsList className="flex flex-col gap-4 w-full max-w-[380px]">
             <div className="max-w-[380px] flex flex-col gap-3 mb-3">
               <h1 className="text-5xl text-white">Why hire me?</h1>
-              <p className="text-md text-white/60">Because I am Great :)</p>
+              <p className="text-md text-white/60">
+                I'm dedicated, efficient, and ready to contribute to your team's
+                success
+              </p>
             </div>
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>

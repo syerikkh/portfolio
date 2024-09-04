@@ -6,6 +6,7 @@ import {
   FaReact,
   FaNodeJs,
   FaFigma,
+  FaDatabase,
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { ScrollArea } from "../../components/ui/scroll-area";
@@ -70,6 +71,7 @@ const skills = {
     { icon: <SiTailwindcss />, name: "Tailwind CSS" },
     { icon: <FaNodeJs />, name: "Node.js" },
     { icon: <FaFigma />, name: "Figma" },
+    { icon: <FaDatabase />, name: "PostgreSql, MongoDb" },
   ],
 };
 

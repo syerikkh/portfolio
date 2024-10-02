@@ -18,31 +18,21 @@ import WorkSliderButtons from "../../components/WorkSliderButtons";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "frontend project",
     title: "project 1",
-    description: "good project hah hah haha",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/cambg_1.jpg",
-    live: "",
-    github: "",
+    description: "I created a blog website with data fetching functionality.",
+    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Next.js" }],
+    image: "/Blog.png",
+    live: "https://blog-eight-jade.vercel.app",
+    github: "https://github.com/syerikkh/blog/tree/main",
   },
   {
     num: "02",
-    category: "backend",
-    title: "project 2",
-    description: "bad project hah hah haha",
-    stack: [{ name: "MongoDb" }, { name: "Node.js" }, { name: "Javascript" }],
-    image: "/cambg_3.jpg",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
-    category: "full stack",
-    title: "project 3",
-    description: "normal project hah hah haha",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: "/cambg_4.jpg",
+    category: "More projects coming soon...",
+    title: "More projects coming soon",
+    description: "Stay tuned for more projects!",
+    stack: [],
+    image: "/Coming-soon.jpg",
     live: "",
     github: "",
   },
@@ -71,7 +61,7 @@ const WorkPage = () => {
                 {project.num}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.category}
               </h2>
               <p className="text-white/60">{project.description}</p>
               <ul>
@@ -140,7 +130,7 @@ const WorkPage = () => {
               <WorkSliderButtons
                 iconsStyles="w-full"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
-                containerStyles="flex gap-2 absolute right-0 w-full justify-between lg:bottom-0 z-20 lg:w-max lg:justify-none"
+                containerStyles="flex gap-2 absolute right-0 w-full justify-between bottom-0 z-20 lg:w-max lg:justify-none"
               />
             </Swiper>
           </div>

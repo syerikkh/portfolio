@@ -6,9 +6,16 @@ import {
   FaReact,
   FaNodeJs,
   FaFigma,
-  FaDatabase,
+  FaGithub,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiMongodb,
+  SiMysql,
+  SiPostgresql,
+} from "react-icons/si";
 import { ScrollArea } from "../../components/ui/scroll-area";
 import {
   Tooltip,
@@ -34,7 +41,7 @@ const experience = {
   description: "Here's a summary of my experience.",
   items: [
     {
-      company: "Franklyn Discovery School",
+      company: "Franklin Discovery School",
       position: "Reading Tutor",
       duration: "2023-2024",
     },
@@ -52,6 +59,11 @@ const education = {
   description: "Here's a summary of my educational background.",
   items: [
     {
+      institution: "Empathy School",
+      degree: "High School",
+      duration: "2014-2018",
+    },
+    {
       institution: "Pinecone Academy",
       degree: "Full Stack Web Development",
       duration: "2023-2024",
@@ -67,11 +79,15 @@ const skills = {
     { icon: <FaCss3 />, name: "CSS" },
     { icon: <FaReact />, name: "React.js" },
     { icon: <FaJs />, name: "JavaScript" },
+    { icon: <SiTypescript />, name: "Typescript" },
     { icon: <SiNextdotjs />, name: "Next.js" },
     { icon: <SiTailwindcss />, name: "Tailwind CSS" },
     { icon: <FaNodeJs />, name: "Node.js" },
     { icon: <FaFigma />, name: "Figma" },
-    { icon: <FaDatabase />, name: "PostgreSql, MongoDb" },
+    { icon: <SiMongodb />, name: "Mongodb" },
+    { icon: <SiPostgresql />, name: "PostgreSql" },
+    { icon: <SiMysql />, name: "MySql" },
+    { icon: <FaGithub />, name: "GitHub" },
   ],
 };
 

@@ -21,11 +21,6 @@ const Home = () => {
               innovative ideas to life.{" "}
             </p>
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <Button className="border border-accent text-accent hover:bg-accent-hover hover:text-primary rounded-xl">
-                <div className="flex gap-2 uppercase items-center">
-                  Download CV <FiDownload />
-                </div>
-              </Button>
               <div>
                 <Socials
                   containerStyle="flex gap-6"

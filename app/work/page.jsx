@@ -18,6 +18,40 @@ import WorkSliderButtons from "../../components/WorkSliderButtons";
 const projects = [
   {
     num: "01",
+    category: "travel",
+    title: "project 2",
+    description: (
+      <>
+        A simple web application for travel management with user authentication
+        and admin features
+        <br />
+        Admin Credentials: Email: admin@gmail.com, Password: admin1234
+        <br></br>
+        Features:
+        <br></br>
+        User Authentication: Secure sign-up and login using JWT.
+        <br></br>
+        Admin Dashboard: Create travels and view all users.
+        <br></br>
+        Travel Management: View travel details, add to cart, and delete items.
+        <br></br>
+        Cookie-Based Authentication: JWT tokens stored in cookies for enhanced
+        security.
+      </>
+    ),
+    stack: [
+      { name: "MongoDB" },
+      { name: "Express.js" },
+      { name: "Next.js" },
+      { name: "Cloudinary" },
+      { name: "JWT Authentication" },
+    ],
+    image: "/Travel.png",
+    live: "https://travel-phi-bice.vercel.app/",
+    github: "https://github.com/syerikkh/Travel",
+  },
+  {
+    num: "02",
     category: "frontend project",
     title: "project 1",
     description: "I created a blog website with data fetching functionality.",
@@ -26,8 +60,9 @@ const projects = [
     live: "https://blog-eight-jade.vercel.app",
     github: "https://github.com/syerikkh/blog/tree/main",
   },
+
   {
-    num: "02",
+    num: "03",
     category: "More projects coming soon...",
     title: "More projects coming soon",
     description: "Stay tuned for more projects!",

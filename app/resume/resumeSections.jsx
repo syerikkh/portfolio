@@ -41,15 +41,14 @@ const experience = {
   description: "Here's a summary of my experience.",
   items: [
     {
-      company: "Franklin Discovery School",
-      position: "Reading Tutor",
-      duration: "2023-2024",
+      company: "Pinecone Academy",
+      position: "Intern",
+      duration: "2024",
     },
-    { company: "Toki", position: "Delivery", duration: "2022-2023" },
     {
-      company: "Mediana Restaurant",
-      position: "Waiter",
-      duration: "2020-2022",
+      company: "Franklin Discovery School",
+      position: "English Reading Tutor",
+      duration: "2023-2024",
     },
   ],
 };

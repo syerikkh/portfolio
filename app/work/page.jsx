@@ -22,21 +22,12 @@ const projects = [
     title: "project 2",
     description: (
       <>
-        A simple web application for travel management with user authentication
-        and admin features
-        <br />
+        A travel management web app with user authentication and admin features.
+        Admin can create travel packages and view users. Users can view travel
+        details, add to cart, and delete items. JWT tokens are stored in cookies
+        for secure authentication. Pagination is implemented for travel data.
+        <br /> <br />
         Admin Credentials: Email: admin@gmail.com, Password: admin1234
-        <br></br>
-        Features:
-        <br></br>
-        User Authentication: Secure sign-up and login using JWT.
-        <br></br>
-        Admin Dashboard: Create travels and view all users.
-        <br></br>
-        Travel Management: View travel details, add to cart, and delete items.
-        <br></br>
-        Cookie-Based Authentication: JWT tokens stored in cookies for enhanced
-        security.
       </>
     ),
     stack: [

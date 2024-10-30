@@ -18,6 +18,31 @@ import WorkSliderButtons from "../../components/WorkSliderButtons";
 const projects = [
   {
     num: "01",
+    category: "Expense Tracker",
+    title: "project 1",
+    description: (
+      <>
+        The Expense Tracker Web App allows users to sign up and log in to manage
+        their finances. Users can create categories, add transactions for both
+        expenses and income, and view visual insights through charts on their
+        dashboard. JWT tokens are stored in cookies for secure authentication.
+        <br /> <br />
+        Sample User Credentials:: Email: ben@gmail.com, Password: ben1234
+      </>
+    ),
+    stack: [
+      { name: "PostgreSql" },
+      { name: "Express.js" },
+      { name: "Next.js" },
+      { name: "DaisyUI" },
+      { name: "JWT Authentication" },
+    ],
+    image: "/Tracker.png",
+    live: "https://expense-tracker-psi-amber.vercel.app/",
+    github: "https://github.com/syerikkh/expense_tracker",
+  },
+  {
+    num: "02",
     category: "travel",
     title: "project 2",
     description: (
@@ -42,9 +67,9 @@ const projects = [
     github: "https://github.com/syerikkh/Travel",
   },
   {
-    num: "02",
+    num: "03",
     category: "frontend project",
-    title: "project 1",
+    title: "project 3",
     description: "I created a blog website with data fetching functionality.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Next.js" }],
     image: "/Blog.png",
@@ -53,7 +78,7 @@ const projects = [
   },
 
   {
-    num: "03",
+    num: "04",
     category: "More projects coming soon...",
     title: "More projects coming soon",
     description: "Stay tuned for more projects!",
